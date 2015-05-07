@@ -36,7 +36,7 @@ plot4<- function() {
   png(file="plot4.png",  bg="transparent", width=480, height=480)
   
   # Use par to set a 2x2 matrix of sub-plots and the margins
-  par(mfrow = c(2,2), pty = "m", mar=c(4,4,4,2))
+  par(mfrow = c(2,2), pty = "m", mar=c(5,4,4,2))
   
   # sub-plot 1 @ location (1,1)
   plot(datetime,as.numeric(twodays$Global_active_power), 
@@ -64,8 +64,7 @@ plot4<- function() {
   
   # sub-plot 4 @ location (2,2)
   plot(datetime,as.numeric(twodays$Global_reactive_power), 
-       type="l", 
-       xlab="", 
+       type="l",  
        ylab="Global Reactive Power")
   # We need to close the file !!
   dev.off()

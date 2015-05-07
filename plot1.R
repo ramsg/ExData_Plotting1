@@ -31,7 +31,7 @@ plot1 <- function() {
   # USe the hist function to plot the first plot for Global Acvite Power vs Freqeuncy
   hist(as.numeric(twodays$Global_active_power), 
        main=paste("Global Active Power"), 
-       xlab="Global Active Power (in kilowatts)", 
+       xlab="Global Active Power (kilowatts)", 
        col="red")
   
   # We need to close the device !!

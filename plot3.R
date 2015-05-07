@@ -43,7 +43,10 @@ plot3 <- function() {
   with(twodays, points(DateTime,as.numeric(Sub_metering_3),type="l", col="blue"))
   
   #Now add legend for all the three plots
-  legend("topright", lty=1,col = c("black","red", "blue"), legend=c("Sub Metering 1", "Sub Metering 2","Sub Metering 3"), xjust=0)
+  legend("topright", lty=1,
+         col=c("black","red", "blue"), 
+         legend=c("Sub Metering 1", "Sub Metering 2","Sub Metering 3"), 
+         xjust=0)
   
   # We need to close the file !!
   dev.off()

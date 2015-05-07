@@ -37,7 +37,7 @@ plot2 <- function() {
     
   # USe the plot function to plot Date/Time vs for Global Acvite Power
   plot(datetime,as.numeric(twodays$Global_active_power), type="l", 
-       xlab="", ylab="Global Active Power (in kilowatts)")
+       xlab="", ylab="Global Active Power (kilowatts)")
   
   # We need to close the png device !!
   dev.off()
